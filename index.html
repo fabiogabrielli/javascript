@@ -6,6 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    TESTE
+    <script>
+
+let nome = prompt("Por favor, insira seu nome:");
+let idade = prompt("Por favor, insira sua idade:");
+
+let dataAtual = new Date();
+let anoAtual = dataAtual.getFullYear();
+let dataNasc = anoAtual - idade;
+
+alert("Olá " + nome + ". Você nasceu em " + dataNasc + ".");
+
+    </script>
 </body>
 </html>
