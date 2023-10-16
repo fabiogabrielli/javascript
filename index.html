@@ -11,9 +11,11 @@
 let nome = prompt("Por favor, insira seu nome:");
 let idade = prompt("Por favor, insira sua idade:");
 
+let idadeFloat = parseFloat(idade);
+
 let dataAtual = new Date();
 let anoAtual = dataAtual.getFullYear();
-let dataNasc = anoAtual - idade;
+let dataNasc = anoAtual - idadeFloat;
 
 alert("Olá " + nome + ". Você nasceu em " + dataNasc + ".");
 
